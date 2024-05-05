@@ -1,15 +1,26 @@
-public class isPrime {
+public class IsPrime {
+
 	public static double absoluteValue(double valu) {
-		//double valu;
-		if (valu <  0 ) {
-			return valu;
-		}else {
+		if (valu < 0) {
+			return - valu;
+		} else {
 			return valu;
 		}
 	}
+
+	public static boolean isPrime (int value) {
+		for (int i = 2; i < value; i++) {
+			if (value % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public static void main(String[] args) {
-		//absoluteValue(5.0);
 		System.out.println(absoluteValue(-7.1));
+		System.out.println(isPrime(14));
+		System.out.println(isPrime(17));
 	}
 }
 

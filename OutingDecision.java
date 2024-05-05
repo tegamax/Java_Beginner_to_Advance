@@ -1,5 +1,5 @@
 
-public class outingDecision {
+public class OutingDecision {
     /*
      * Assume you have access to two boolean variables, isSnowing, and isRaining, and one
     double variable, temperature. isSnowing is true when it’s snowing and false otherwise,
@@ -8,14 +8,14 @@ public class outingDecision {
     snowing, or below 50 degrees Fahrenheit (10 degrees Celsius), and prints “Let’s go out!”
     otherwise.
      */
-public static void main(String[] args) {
-    boolean isSnowing = false;
-    boolean isRaining = true;
-    double temperature = 60.0;
-    if (isSnowing || isRaining || temperature < 50) {
-        System.out.println("Let's stay at home!");
-    }else  {
-        System.out.println("Let's go out!");
+    public static void main(String[] args) {
+        boolean isSnowing = false;
+        boolean isRaining = true;
+        double temperature = 60.0;
+        if (isSnowing || isRaining || temperature < 50) {
+            System.out.println("Let's stay at home!");
+        } else {
+            System.out.println("Let's go out!");
         }
-}
+    }
 }
